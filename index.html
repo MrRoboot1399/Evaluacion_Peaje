@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Peaje Popayán - El Tambo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <div class="container">
+    <img src="./imagenes/peaje.jpg" alt="Peaje Popayán - El Tambo" height="250" >
+  </div>
+
+  <!-- Vehículos con precios -->
+  <div class="vehiculos">
+    <div>
+      <img src="./imagenes/automovil.png" alt="Automóvil" width="200" data-valor="5000">
+      <p>$5000</p>
+    </div>
+    <div>
+      <img src="./imagenes/bus.png" alt="Bus" width="200" data-valor="10000">
+      <p>$10000</p>
+    </div>
+    <div>
+      <img src="./imagenes/camion.png" alt="Camión" width="200" data-valor="15000">
+      <p>$15000</p>
+    </div>
+  </div>
+
+  
+  <div class="card" aria-label="Peaje Popayán-El Tambo">
+    <div class="card-header"><h4> PEAJE POPAYÁN- EL TAMBO</h4> </div>
+    <div class="card-body">
+      <div class="row">
+        <label for="autos">Total de Automóviles:</label>
+        <input id="autos" type="text" readonly value="0" />
+      </div>
+
+      <div class="row">
+        <label for="buses">Total de Buses:</label>
+        <input id="buses" type="text" readonly value="0" />
+      </div>
+
+      <div class="row">
+        <label for="camiones">Total de Camiones:</label>
+        <input id="camiones" type="text" readonly value="0" />
+      </div>
+
+      <div class="row">
+        <label for="total">Total Recaudado:</label>
+        <input id="total" type="text" readonly value="$0" />
+      </div>
+
+      <div class="buttons">
+  <button id="abrir" class="open" type="button">Abrir Peaje</button>
+  <button id="cerrar" class="close" type="button">Cerrar Peaje</button>
+</div>
+
+
+  
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

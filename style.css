@@ -1,0 +1,62 @@
+.vehiculos {
+  display: flex;
+  justify-content: space-around; /* separa las imágenes en la fila */
+  align-items: center;
+  margin: 20px 0;
+}
+
+.vehiculos div {
+  text-align: center; /* centra el precio bajo la imagen */
+}
+
+.vehiculos img {
+  width: 200px;   /* mismo ancho para todas */
+  height: auto;
+}
+.card {
+  width: 320px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center; /* centra el contenido dentro de la tarjeta */
+}
+
+.card-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra todo horizontalmente */
+  gap: 12px; /* espacio entre filas */
+}
+
+.row {
+  display: flex;
+  flex-direction: column; /* label arriba, input abajo */
+  align-items: center;    /* centra ambos */
+  gap: 5px;               /* espacio entre label e input */
+}
+
+.row label {
+  font-weight: bold;
+}
+
+.row input {
+  width: 150px;
+  padding: 6px;
+  text-align: center;
+}
+
+
+.open{
+    background-color: rgb(7, 190, 77);
+    
+}
+.close {
+    background-color: red;
+
+}
+h4{
+    background-color: green;
+    margin-bottom: 15px;
+}
