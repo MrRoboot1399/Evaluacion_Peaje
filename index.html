@@ -58,6 +58,19 @@
   <button id="cerrar" class="close" type="button">Cerrar Peaje</button>
 </div>
 
+// codigo del reloj
+<div id="reloj"></div>
+<script>
+  function actualizarReloj() {
+    const ahora = new Date();
+    document.getElementById("reloj").textContent =
+      ahora.toLocaleTimeString(); 
+  }
+  setInterval(actualizarReloj, 1000);
+  actualizarReloj();
+</script>
+
+
 
   
   <script type="module" src="./main.js"></script>
